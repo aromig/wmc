@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'ArvoRegular';
+    src: url('../fonts/arvo-regular.eot');
+    src: url('../fonts/arvo-regular.eot') format('embedded-opentype'),
+         url('../fonts/arvo-regular.woff') format('woff'),
+         url('../fonts/arvo-regular.ttf') format('truetype'),
+         url('../fonts/arvo-regular.svg#ArvoRegular') format('svg');
+}
+
+html { position: relative; min-height: 100%; }
+body { background: #111 url('../images/carbon_fiber.png'); margin-bottom: 80px; }
+a { color: #c2122d; }
+a:hover, a:focus { color: #9d1f20; }
+
+/* Navigation Bar */
+nav { box-shadow: 0 3px 25px #000; }
+.navbar { margin-bottom: 0; }
+#navbar_logo { display: none; }
+
+/* Banner */
+#banner {
+    background: url(../images/banner_960x642.jpg) center center;
+    background-size: cover;
+    height: 300px;
+    box-shadow: 0 3px 25px #000;
+}
+#banner h1 {
+    font-family: 'ArvoRegular';
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+#banner h1 img { max-width: 95%; }
+
+/* Section Navigation */
+#section { background: #efefef; box-shadow: 0 0 25px #000; }
+#section div { text-align: center; }
+#section .img-rounded { border-radius: 10px; }
+#section h2 { font-family: 'ArvoRegular'; }
+
+/* Content */
+#content { background: #efefef; }
+#content h3 { font-family: 'ArvoRegular'; font-size: 2em; text-align: center; border-bottom: 1px solid #999; }
+#content h4 { font-family: 'ArvoRegular'; font-size: 1.5em; }
+
+.staff, .tryouts { width: 100%; }
+.staff col { width: 33%; }
+.staff td { font-size: 1.2em; }
+.tryouts col { width: 25%; }
+.tryouts td { font-size: 1.2em; }
+
+/* Sidebar */
+#sidebar>div { margin-bottom: 10px; }
+#sidebar h4 { text-align: center; border-bottom: 1px solid #999; }
+.eventlist { list-style-type: none; margin-top: -8px; }
+.eventlist li { text-indent: -25px; }
+.eventdate h5 { color: #9d1f20; font-weight: bold; }
+
+/* Footer */
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: 62px;
+    background-color: #efefef;
+}
+footer > div { border-top: 2px solid #9d1f20; }
+
+/* Misc Tags */
+address { margin-bottom: 0px; }
+
+/* Responsive Tweaks */
+@media only screen and (max-width: 767px) {
+    body { margin-bottom: 120px; }
+    #navbar_logo { display: inherit; }
+    footer { text-align: center; height: 100px; }
+    #sidebar { text-align: center; }
+}
